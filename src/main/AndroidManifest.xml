@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cprog">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bc"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/bc"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Change" android:theme="@style/AppTheme" android:label="Change Song" android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".Splash"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Song"
+            android:configChanges="uiMode"
+            android:label="Song"
+            android:parentActivityName=".Show"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Show"
+            android:configChanges="uiMode"
+            android:label="Songs Lists"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Add"
+            android:label="Add Songs"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="uiMode"
+            android:label="Chord Prog"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>
